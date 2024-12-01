@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./styles.css">
-        
-    </head> 
-    <body>
-        <div class="container">
-            <div >
-                <h1 class = "header_text">HAPPY FIRST I LOVE YOU</h1>
-                <h1 class = "header_text">DONT CRY WHEN WE HAVE AWAY LOVE!</h1>
+    <style>
+button {
+        background-color: #c33838;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2em;
+        cursor: pointer;
+        position: absolute; bottom: 0;
+    }
+
+    </style>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECEMBER 4 2024
+    </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Liezl.</strong>
+                        <p>
+                            I’m really sorry for making you cry it pains me to know I caused you that hurt. 
+                            You mean so much to me, and I love you deeply; you’re my first in so many ways, 
+                            Happy First
+                            
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="gif_container">
-                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
-            </div>
-            <div class = "buttons">
-                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
-               
+            <div class="heart"></div>
+        </div>
     </div>
-
     <script>
-        function nextPage() {
-            // Redirect to yes.html
-            window.location.href = "loader.html"; 
-        }
-
-        function moveButton() {
-            var noButton = document.getElementById('noButton');
-            var x = Math.random() * (window.innerWidth - noButton.offsetWidth);
-            var y = Math.random() * (window.innerHeight - noButton.offsetHeight);
-            noButton.style.position = 'absolute'; // Make sure the button can be moved
-            noButton.style.left = `${x}px`;
-            noButton.style.top = `${y}px`;
-        }
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
     </script>
+    <button> <a href="third hreff.html">im in love with you</a></button>
 </body>
 </html>
